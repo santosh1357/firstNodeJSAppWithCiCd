@@ -1,8 +1,8 @@
 // Simple async test for HTTP 200 response code using supertest
-//'use strict';
+'use strict';
 
 var request = require("supertest"),
-    app = require("../app").getApp;
+var   app = require("../app").getApp;
 
 describe('GET /', function(){
   it('expects HTTP response 200', function(done){
