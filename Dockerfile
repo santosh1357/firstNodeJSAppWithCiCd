@@ -12,7 +12,7 @@ RUN yum install -y npm
 COPY . /src
 
 #Disabling https workaround for npm_ssl_untrust error
-npm config set strict-ssl false
+RUN npm config set strict-ssl false
 
 # Install app and dependencies into /src
 RUN cd /src; npm install
